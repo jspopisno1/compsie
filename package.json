@@ -4,7 +4,7 @@
   "description": "A MVVM framework designed for quick and reusable development.",
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test:mocha": "./node_modules/.bin/mocha-webpack --webpack-config ./config/webpack.dev-config.js ./src/**/__test/*.test.js",
     "transpile": "webpack --config config/webpack.dev-config.js"
   },
   "author": "lzheng",
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "lazy-assert": "^0.2.12",
+    "mocha": "^3.5.3",
     "mocha-webpack": "next",
     "webpack": "^3.6.0",
     "webpack-node-externals": "^1.6.0"
